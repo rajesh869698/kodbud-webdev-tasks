@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaFlow — High-Impact Motion Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Animated Dynamic Aurora / Mesh Glow Blobs -->
+  <div class="aurora-container">
+    <div class="aurora-blob blob-cyan"></div>
+    <div class="aurora-blob blob-purple"></div>
+    <div class="aurora-blob blob-pink"></div>
+  </div>
+
+  <!-- Header / Navigation (Slide Down Entrance) -->
+  <header class="navbar anim-slide-down">
+    <div class="nav-container">
+      <a href="#" class="logo">Nova<span class="logo-glow">Flow</span></a>
+      <nav class="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="btn-link">Sign In</a>
+        <a href="#get-started" class="btn btn-primary pulse-glow-btn">Start Free</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="get-started">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        
+        <!-- Pulsing Live Badge -->
+        <div class="badge-animated anim-slide-right delay-1">
+          <span class="live-dot"></span>
+          <span>NovaFlow 2.0 Motion Release</span>
+        </div>
+
+        <h1 class="hero-title anim-slide-right delay-2">
+          Workflow management built for <span class="shimmer-text">hyperspeed.</span>
+        </h1>
+
+        <p class="hero-subtitle anim-slide-right delay-3">
+          Coordinate engineering, design, and marketing tasks in real time without the clutter. NovaFlow turns scattered plans into shipped products.
+        </p>
+
+        <!-- Animated Form Input -->
+        <div class="hero-form anim-slide-right delay-4">
+          <div class="input-glow-wrapper">
+            <input type="email" placeholder="Enter work email..." />
+          </div>
+          <button class="btn btn-primary animated-submit">
+            <span>Get Early Access</span>
+            <span class="arrow-motion">→</span>
+          </button>
+        </div>
+
+        <p class="sub-text anim-fade-in delay-5">⚡ Free 14-day trial • Zero configuration required</p>
+      </div>
+
+      <!-- Hero 3D Interactive Perspective App Window -->
+      <div class="hero-preview anim-perspective-entrance delay-3">
+        <div class="app-window-card">
+          <div class="window-bar">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-title-tab">novaflow-prod-cluster.live</div>
+          </div>
+          <div class="window-body">
+            <div class="mock-sidebar">
+              <div class="skeleton-line shimmer-box" style="width: 70%"></div>
+              <div class="skeleton-line shimmer-box" style="width: 50%"></div>
+              <div class="skeleton-line shimmer-box" style="width: 85%"></div>
+            </div>
+            <div class="mock-board">
+              <!-- Live Activity Pulse Row -->
+              <div class="mock-card card-levitate-1">
+                <div class="card-indicator ind-blue"></div>
+                <div class="card-details">
+                  <span class="mini-title">Real-Time Sync Engine</span>
+                  <span class="mini-sub">Latency: 12ms (Optimal)</span>
+                </div>
+                <span class="live-badge-mini">ACTIVE</span>
+              </div>
+              <div class="mock-card card-levitate-2">
+                <div class="card-indicator ind-purple"></div>
+                <div class="card-details">
+                  <span class="mini-title">Microfrontend Assets</span>
+                  <span class="mini-sub">Build status: Passed</span>
+                </div>
+                <span class="live-badge-mini">DEPLOYED</span>
+              </div>
+              <div class="mock-card card-levitate-3">
+                <div class="card-indicator ind-green"></div>
+                <div class="card-details">
+                  <span class="mini-title">Continuous CI/CD Hook</span>
+                  <span class="mini-sub">Triggered by git push</span>
+                </div>
+                <span class="live-badge-mini">QUEUED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Highlights Section with Kinetic Cards -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Features</span>
+        <h2>Engineered for High-Velocity Teams</h2>
+        <p>Hover over cards to trigger dynamic neon gradients and kinetic expansion.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card kinetic-card">
+          <div class="feature-icon float-icon">⚡</div>
+          <h3>Real-Time Sync</h3>
+          <p>Instant state updates across all connected devices with zero latency or sync conflicts.</p>
+          <div class="card-border-glow"></div>
+        </div>
+
+        <div class="feature-card kinetic-card">
+          <div class="feature-icon float-icon delay-1">📊</div>
+          <h3>Kanban & Gantt Views</h3>
+          <p>Switch seamlessly between agile sprint boards, timeline charts, and backlog lists.</p>
+          <div class="card-border-glow"></div>
+        </div>
+
+        <div class="feature-card kinetic-card">
+          <div class="feature-icon float-icon delay-2">🔒</div>
+          <h3>Enterprise Security</h3>
+          <p>End-to-end data encryption, granular role-based permissions, and SOC-2 compliance.</p>
+          <div class="card-border-glow"></div>
+        </div>
+
+        <div class="feature-card kinetic-card">
+          <div class="feature-icon float-icon delay-3">🔄</div>
+          <h3>Continuous CI/CD Hooks</h3>
+          <p>Trigger automated deployments, webhooks, and issue tickets directly from tasks.</p>
+          <div class="card-border-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Social Proof</span>
+        <h2>Loved by Product Leaders</h2>
+        <p>See how modern teams scale their output with NovaFlow.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card kinetic-card">
+          <p class="quote">"NovaFlow replaced three separate project tools for our distributed engineering team. Our delivery cycle time dropped by nearly 30%."</p>
+          <div class="author">
+            <div class="author-avatar pulse-avatar">SC</div>
+            <div class="author-info">
+              <h4>Sarah Chen</h4>
+              <span>VP of Product, CloudScale</span>
+            </div>
+          </div>
+          <div class="card-border-glow"></div>
+        </div>
+
+        <div class="testimonial-card kinetic-card">
+          <p class="quote">"The cleanest UI I've ever used. Onboarding took less than twenty minutes, and our cross-functional teams love using it daily."</p>
+          <div class="author">
+            <div class="author-avatar pulse-avatar">MR</div>
+            <div class="author-info">
+              <h4>Marcus Reynolds</h4>
+              <span>Lead Architect, FinPulse</span>
+            </div>
+          </div>
+          <div class="card-border-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 NovaFlow Inc. Built for Kodbud Internship Task 8 (Animation Showcase).</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Status</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

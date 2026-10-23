@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #202124;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.75rem;
+  font-size: 13px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #202124;
+  margin-right: 18px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 12px !important;
+}
+
+.icon-btn:hover {
+  background-color: #f1f3f4;
+  text-decoration: none !important;
+}
+
+/* Blue Sign In Button */
+.signin-btn {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 9px 23px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.signin-btn:hover {
+  background-color: #185abc;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3);
+}
+
+/* Main Area */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8vh;
+}
+
+.logo-container {
+  margin-bottom: 24px;
+}
+
+.google-logo {
+  width: 272px;
+  height: 92px;
+}
+
+/* Pill Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 690px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 0 10px 0 16px;
+  box-shadow: 0 1px 4px rgba(32, 33, 36, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.left-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 14px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #202124;
+  background: transparent;
+}
+
+.right-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tool-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.ai-mode-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f1f3f4;
+  border: 1px solid #dadce0;
+  color: #3c4043;
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: background-color 0.2s;
+}
+
+.ai-mode-btn:hover {
+  background-color: #e8eaed;
+}
+
+/* Action Buttons */
+.search-buttons {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+}
+
+.search-buttons button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  padding: 0 16px;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-buttons button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+/* Gemini Promo Banner */
+.promo-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 36px;
+  font-size: 13px;
+}
+
+.promo-text {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.promo-text:hover {
+  text-decoration: underline;
+}
+
+/* Language Selection */
+.languages {
+  margin-top: 22px;
+  font-size: 13px;
+  color: #4d5156;
+}
+
+.languages a {
+  color: #1a0dab;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  font-size: 14px;
+  color: #70757a;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #70757a;
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-top {
+  padding: 14px 28px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 12px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .search-bar {
+    width: 95%;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+  .languages {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 1rem;
+  }
+}

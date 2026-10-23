@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="card">
+      <div class="card-header">
+        <span class="badge">Careers</span>
+        <h1>Software Engineering Intern Application</h1>
+        <p>Please fill out all the details accurately. Our talent acquisition team will review your submission within 3-5 business days.</p>
+      </div>
+
+      <!-- Success Notification Banner -->
+      <div id="success-banner" class="success-banner" role="alert">
+        <div class="banner-icon">✓</div>
+        <div>
+          <h4>Application Submitted!</h4>
+          <p>Thank you for applying. We have received your details.</p>
+        </div>
+      </div>
+
+      <form id="application-form" novalidate>
+        <!-- Full Name -->
+        <div class="form-group" id="group-fullname">
+          <label for="fullname">Full Name <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <input type="text" id="fullname" placeholder="e.g. John Doe" autocomplete="name" />
+            <span class="status-icon"></span>
+          </div>
+          <small class="error-msg">Please enter your full name (minimum 3 characters).</small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group" id="group-email">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <input type="email" id="email" placeholder="e.g. john.doe@example.com" autocomplete="email" />
+            <span class="status-icon"></span>
+          </div>
+          <small class="error-msg">Please provide a valid email address.</small>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group" id="group-phone">
+          <label for="phone">Phone Number <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <input type="tel" id="phone" placeholder="e.g. 9876543210 (10 digits)" autocomplete="tel" />
+            <span class="status-icon"></span>
+          </div>
+          <small class="error-msg">Please enter a valid 10-digit phone number.</small>
+        </div>
+
+        <!-- Message / Cover Note -->
+        <div class="form-group" id="group-message">
+          <label for="message">Why should we hire you? <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <textarea id="message" rows="4" placeholder="Briefly introduce yourself and mention your key projects or technical strengths..."></textarea>
+            <span class="status-icon"></span>
+          </div>
+          <div class="msg-footer">
+            <small class="error-msg">Please share a message of at least 20 characters.</small>
+            <span class="char-counter" id="char-counter">0 / 20 min</span>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn">
+          <span>Submit Application</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

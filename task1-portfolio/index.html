@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="logo">Portfolio<span>.</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / About Section -->
+  <section id="about" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="tagline">Hello, I'm</p>
+        <h1 id="user-name">Rajesh Sankhla</h1>
+        <h2 class="subheading">Aspiring Web Developer & Tech Enthusiast</h2>
+        <p class="bio">
+          Passionate about building responsive, accessible, and high-performance web applications. Always eager to solve complex problems and learn modern web technologies.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.jpeg" alt="Profile Picture" class="avatar" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Bachelor of Technology in Computer Science</h3>
+        <p class="institution">Vivekananda Global University Jaipur</p>
+        <span class="date">2025 — 2029</span>
+        <p class="details">Focused on core algorithms, software engineering principles, computer networks, and full-stack web development.</p>
+      </div>
+      <div class="card">
+        <h3>Higher Secondary Certificate (XII)</h3>
+        <p class="institution">Govt. Senior Seconodary School Parbatsar</p>
+        <span class="date">2020 — 2022</span>
+        <p class="details">Majored in Science with Physics, Chemistry, and Mathematics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-alt">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-pill">HTML5</div>
+      <div class="skill-pill">CSS</div>
+      <div class="skill-pill">JavaScript </div>
+      <div class="skill-pill">Git & GitHub</div>
+      <div class="skill-pill">Responsive Design</div>
+      <div class="skill-pill">REST APIs</div>
+      <div class="skill-pill">Bootstrap</div>
+      <div class="skill-pill">Node.js Basics</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+ <section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Basic Calculator</h3>
+          <p>An interactive web calculator that performs standard arithmetic operations with keyboard support and clear display handling.</p>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-alt">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-container">
+      <form id="portfolio-contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+        <p id="form-feedback" class="feedback-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

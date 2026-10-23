@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 580px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  border: 1px solid #e2e8f0;
+}
+
+.card-header {
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.card-header h1 {
+  font-size: 1.6rem;
+  color: #0f172a;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.card-header p {
+  color: #64748b;
+  font-size: 0.925rem;
+  line-height: 1.5;
+}
+
+/* Success Banner */
+.success-banner {
+  display: none;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.success-banner.visible {
+  display: flex;
+}
+
+.banner-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.success-banner h4 {
+  font-size: 0.95rem;
+  color: #166534;
+}
+
+.success-banner p {
+  font-size: 0.85rem;
+  color: #15803d;
+}
+
+/* Form Groups */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.4rem;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-right: 2.5rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.input-wrapper textarea {
+  resize: vertical;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  background-color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.status-icon {
+  position: absolute;
+  right: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* Error & Success States */
+.error-msg {
+  color: #ef4444;
+  font-size: 0.775rem;
+  margin-top: 0.35rem;
+  display: none;
+  font-weight: 500;
+}
+
+.msg-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.char-counter {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.35rem;
+}
+
+/* Invalid State */
+.form-group.invalid .input-wrapper input,
+.form-group.invalid .input-wrapper textarea {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.form-group.invalid .status-icon {
+  color: #ef4444;
+}
+
+.form-group.invalid .status-icon::after {
+  content: "✕";
+}
+
+.form-group.invalid .error-msg {
+  display: block;
+}
+
+/* Valid State */
+.form-group.valid .input-wrapper input,
+.form-group.valid .input-wrapper textarea {
+  border-color: #22c55e;
+  background-color: #ffffff;
+}
+
+.form-group.valid .status-icon {
+  color: #22c55e;
+}
+
+.form-group.valid .status-icon::after {
+  content: "✓";
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 0.75rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.submit-btn:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex 2026 — Global Tech Conference</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">Apex<span class="text-primary">2026</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sessions">Sessions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Tickets</a></li>
+        </ul>
+        <a href="#register" class="btn btn-primary ms-lg-3 px-4">Register Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-dark text-white py-5 py-lg-6 position-relative border-bottom border-secondary">
+    <div class="container py-5 text-center text-lg-start">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="badge bg-primary px-3 py-2 text-uppercase mb-3">November 18–20, 2026</span>
+          <h1 class="display-4 fw-bold lh-1 mb-3">The Premier Conference on Scalable Web Engineering</h1>
+          <p class="lead text-secondary mb-4">Join 2,500+ developers, architects, and product builders in Bengaluru and online for three days of high-velocity masterclasses and technical keynotes.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+            <a href="#register" class="btn btn-primary btn-lg px-4">Grab Early Bird Pass</a>
+            <a href="#sessions" class="btn btn-outline-light btn-lg px-4">View Agenda</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card bg-secondary bg-opacity-25 border-secondary text-white p-4 shadow-lg rounded-4">
+            <h4 class="fw-bold mb-3">Conference Highlights</h4>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+              <li class="d-flex align-items-center gap-2">
+                <span class="badge bg-success rounded-circle p-2">✓</span>
+                <span>40+ In-Depth Keynotes & Technical Workshops</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <span class="badge bg-success rounded-circle p-2">✓</span>
+                <span>Distributed Systems, AI Workflows & Frontend Infra</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <span class="badge bg-success rounded-circle p-2">✓</span>
+                <span>Networking lounges & direct hiring booths</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Track Sessions / Card Layout -->
+  <main class="container py-5 my-4" id="sessions">
+    <div class="text-center mb-5">
+      <span class="text-primary fw-semibold text-uppercase">Curated Tracks</span>
+      <h2 class="fw-bold mt-1">Explore Featured Sessions</h2>
+      <p class="text-muted">Designed by staff engineers from leading technology companies.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-3">
+          <div class="card-body p-4 d-flex flex-column">
+            <span class="badge bg-primary-subtle text-primary mb-3 align-self-start">Architecture</span>
+            <h5 class="card-title fw-bold">Microfrontends at Scale</h5>
+            <p class="card-text text-secondary flex-grow-1">Learn how enterprise codebases maintain autonomous deployment pipelines using Module Federation and isolated state stores.</p>
+            <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center">
+              <span class="small text-muted">90 Mins</span>
+              <a href="#" class="btn btn-sm btn-outline-primary">Session Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-3">
+          <div class="card-body p-4 d-flex flex-column">
+            <span class="badge bg-success-subtle text-success mb-3 align-self-start">Performance</span>
+            <h5 class="card-title fw-bold">Optimizing Core Web Vitals</h5>
+            <p class="card-text text-secondary flex-grow-1">Practical strategies for minimizing main thread blocking time, tuning CSS delivery, and mastering browser repaint pipelines.</p>
+            <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center">
+              <span class="small text-muted">60 Mins</span>
+              <a href="#" class="btn btn-sm btn-outline-primary">Session Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-3">
+          <div class="card-body p-4 d-flex flex-column">
+            <span class="badge bg-warning-subtle text-dark mb-3 align-self-start">Backend</span>
+            <h5 class="card-title fw-bold">Event-Driven Streaming</h5>
+            <p class="card-text text-secondary flex-grow-1">Harnessing Kafka and distributed event queues for fault-tolerant, high-throughput microservices architectures.</p>
+            <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center">
+              <span class="small text-muted">75 Mins</span>
+              <a href="#" class="btn btn-sm btn-outline-primary">Session Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white-50 mt-auto py-4 border-top border-secondary">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="text-center text-md-start">
+        <span class="fw-bold text-white fs-5">Apex 2026</span>
+        <p class="small mb-0 mt-1">Built with Bootstrap 5 for Kodbud Internship Task 7.</p>
+      </div>
+      <ul class="nav list-unstyled d-flex gap-3">
+        <li><a class="text-white-50 text-decoration-none small" href="#">Privacy</a></li>
+        <li><a class="text-white-50 text-decoration-none small" href="#">Terms of Service</a></li>
+        <li><a class="text-white-50 text-decoration-none small" href="#">Contact Organizers</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
